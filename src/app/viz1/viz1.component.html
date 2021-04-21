@@ -1,0 +1,41 @@
+<h1 *ngIf="isRate()">
+    Évolution du taux d'imposition selon les années pour un revenu de {{this.getIncome()}} $
+</h1>
+<h1 *ngIf="!isRate()">
+    Évolution de l'impôt selon les années pour un revenu de {{this.getIncome()}} $
+</h1>
+<div class="container">
+    <div class="viz">
+        <app-graph1></app-graph1>
+    </div>
+
+    <div class="form">
+        <form [formGroup]="vizForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Revenu ($)</mat-label>
+                <input class="input" matInput type="number" min="0" formControlName="income">
+                <mat-error *ngIf="vizForm.get('income')?.hasError('required')"> Il faut mettre une valeur </mat-error>
+                <mat-error *ngIf="vizForm.get('income')?.hasError('min')"> Valeur miminum est 0 $ </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Année</mat-label>
+                <input matInput type="number" min="1917" max="2020" formControlName="year">
+                <mat-error *ngIf="vizForm.get('income')?.hasError('required')"> Il faut mettre une valeur </mat-error>
+                <mat-error *ngIf="vizForm.get('year')?.hasError('min')"> Valeur miminum est 1917 </mat-error>
+                <mat-error *ngIf="vizForm.get('year')?.hasError('max')"> Valeur maximum est 2020 </mat-error>
+            </mat-form-field>
+            <p> Choissisez si vous voulez les montants en dollars courants ou dollars constants ?</p>
+            <mat-radio-group aria-label="Choissisez une option" formControlName="typeMoney" color="primary">
+                <mat-radio-button value="current">Courant</mat-radio-button>
+                <mat-radio-button value="constant">Passé</mat-radio-button>
+            </mat-radio-group>
+            <br>
+            <br>
+            <p> Choissisez si vous voulez comparer les taux ou les impôts ?</p>
+            <mat-radio-group aria-label="Choissisez une option" formControlName="mode" color="primary">
+                <mat-radio-button value="rate">Taux</mat-radio-button>
+                <mat-radio-button value="tax">Impôt</mat-radio-button>
+            </mat-radio-group>
+        </form>
+    </div>
+</div>

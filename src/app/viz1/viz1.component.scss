@@ -1,0 +1,42 @@
+@import "./../../theme.scss";
+
+::ng-deep .mat-toolbar{
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    // overflow: hidden;
+}
+
+.viz {
+    width: 70vw;
+    padding-right: 5vw;
+    display: inline-block;
+    background-color: red;
+}
+
+::ng-deep mat-form-field {
+    width: 150px;
+    padding: 5px;
+}
+
+.form {
+    width: 22vw;
+    display: inline-block;
+    font-size: large;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+
+
+::ng-deep mat-radio-button {
+    padding: 8px;
+}
+
+p {
+    font-weight: normal;
+}
