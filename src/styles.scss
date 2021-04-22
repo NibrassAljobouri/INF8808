@@ -15,7 +15,7 @@ $custom: (
     200: #b794f6,
     300: #9965f4,
     400: #7e3ff2,
-    500: #1c00db,
+    500: #0c6b97,
     600: #4072b4,
     700: #38649d,
     800: #305687,
@@ -68,6 +68,10 @@ $inf8808-projet-theme: mat-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { 
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
 }

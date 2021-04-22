@@ -888,7 +888,7 @@
             "Fédéral Revenu imposable plus de ": "0",
             "Fédéral Revenu imposable moins de ": "2000",
             "Fédéral taux": "0.02",
-            "Fédéral montant de base": "1500",
+            "Fédéral montant de base": "1 500$ si le revenu dépasse 1 500$",
             "Combiné Revenu imposable plus de ": "0",
             "Combiné Revenu imposable moins de ": "2000",
             "Combiné Taux": "0.02"
@@ -4716,14 +4716,20 @@
         {
             "year": "1938",
             "Fédéral Revenu imposable plus de ": "14000",
+            "Fédéral Revenu imposable moins de ": "15000",
             "Fédéral taux": "0.18",
             "Combiné Revenu imposable plus de ": "14000",
+            "Combiné Revenu imposable moins de ": "15000",
             "Combiné Taux": "0.18"
         },
-       
+        {
+            "year": "1938",
+            "Fédéral Revenu imposable plus de ": "15000",
+            "Combiné Revenu imposable plus de ": "15000"
+        },
         {
             "year": "1939",
-            "Fédéral Revenu imposable plus de ": "0",
+            "Fédéral Revenu imposable plus de ": "1000",
             "Fédéral Revenu imposable moins de ": "2000",
             "Fédéral taux": "0.04",
             "Fédéral montant de base": "2000",
@@ -4851,11 +4857,17 @@
         {
             "year": "1939",
             "Fédéral Revenu imposable plus de ": "15000",
+            "Fédéral Revenu imposable moins de ": "16000",
             "Fédéral taux": "0.18",
             "Combiné Revenu imposable plus de ": "15000",
+            "Combiné Revenu imposable moins de ": "16000",
             "Combiné Taux": "0.18"
         },
-       
+        {
+            "year": "1939",
+            "Fédéral Revenu imposable plus de ": "16000",
+            "Combiné Revenu imposable plus de ": "16000"
+        },
         {
             "year": "1940",
             "Fédéral Revenu imposable plus de ": "0",
@@ -4949,8 +4961,10 @@
         {
             "year": "1941",
             "Fédéral Revenu imposable plus de ": "4000",
+            "Fédéral Revenu imposable moins de ": "5000",
             "Fédéral taux": "0.33",
             "Combiné Revenu imposable plus de ": "4000",
+            "Combiné Revenu imposable moins de ": "5000",
             "Combiné Taux": "0.33"
         },
         {
@@ -13468,6 +13482,7 @@
         {
             "year": "1984",
             "Quebec Revenu imposable plus de ": "54380",
+            "Quebec Revenu imposable moins de ": "60714",
             "Quebec Taux": "0.32",
             "Combiné Revenu imposable plus de ": "20644",
             "Combiné Revenu imposable moins de ": "22284",

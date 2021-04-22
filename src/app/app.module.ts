@@ -13,6 +13,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { Viz1Component } from './viz1/viz1.component';
 import { Viz2Component } from './viz2/viz2.component';
 import { Graph1Component } from './graph1/graph1.component';
+import { PreprocessingService } from './services/preprocessing.service';
 
 @NgModule({
     declarations: [
@@ -34,7 +35,7 @@ import { Graph1Component } from './graph1/graph1.component';
         ReactiveFormsModule,
         MatRadioModule
     ],
-    providers: [],
+    providers: [PreprocessingService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
